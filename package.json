@@ -1,21 +1,31 @@
 {
-  "name": "deepmerge",
-  "description": "A library for deep (recursive) merging of Javascript objects",
+  "name": "deepmerge-clone",
+  "description": "A fork of deepmerge for deep (recursive) merging of JavaScript objects, with the prototype pollution vulnerability (CVE-2022-25883) fixed",
   "keywords": [
     "merge",
     "deep",
     "extend",
     "copy",
     "clone",
-    "recursive"
+    "recursive",
+    "deepmerge",
+    "prototype-pollution",
+    "security"
   ],
-  "version": "4.3.1",
-  "homepage": "https://github.com/TehShrike/deepmerge",
+  "author": "afei",
+  "version": "4.3.2",
+  "homepage": "https://github.com/MrMoveon/deepmerge-clone#readme",
   "repository": {
     "type": "git",
-    "url": "git://github.com/TehShrike/deepmerge.git"
+    "url": "git+https://github.com/MrMoveon/deepmerge-clone.git"
   },
   "main": "dist/cjs.js",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "dist",
+    "changelog.md"
+  ],
   "engines": {
     "node": ">=0.10.0"
   },

@@ -1,3 +1,7 @@
+# [4.3.2](https://github.com/MrMoveon/deepmerge-clone/releases/tag/v4.3.2)
+
+- Security: Fix prototype pollution (CVE-2022-25883 / CVE-2024-38996). `getKeys()` now filters out the dangerous keys `__proto__`, `constructor`, and `prototype` so that merging attacker-controlled objects cannot poison `Object.prototype` or otherwise mutate the prototype chain of the returned object. Also covers the `constructor.prototype` chain-pollution variant and nested payloads.
+
 # [4.3.1](https://github.com/TehShrike/deepmerge/releases/tag/v4.3.1)
 
 - Fix type definition for arrayMerge options.  [#239](https://github.com/TehShrike/deepmerge/pull/239)

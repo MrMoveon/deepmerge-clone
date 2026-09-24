@@ -1,4 +1,6 @@
-# deepmerge
+# deepmerge-clone
+
+> **deepmerge-clone** is a fork of [deepmerge](https://github.com/TehShrike/deepmerge) that includes a fix for the prototype pollution vulnerability (CVE-2022-25883 / CVE-2024-38996). All credit for the original library goes to the deepmerge authors and contributors.
 
 Merges the enumerable properties of two or more objects deeply.
 
@@ -57,10 +59,10 @@ merge(x, y) // => output
 With [npm](http://npmjs.org) do:
 
 ```sh
-npm install deepmerge
+npm install deepmerge-clone
 ```
 
-deepmerge can be used directly in the browser without the use of package managers/bundlers as well:  [UMD version from unpkg.com](https://unpkg.com/deepmerge/dist/umd.js).
+deepmerge-clone can be used directly in the browser without the use of package managers/bundlers as well:  [UMD version from unpkg.com](https://unpkg.com/deepmerge-clone/dist/umd.js).
 
 
 ### Include

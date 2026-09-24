@@ -62,7 +62,12 @@
 	}
 
 	function getKeys(target) {
-		return Object.keys(target).concat(getEnumerableOwnPropertySymbols(target))
+		return Object.keys(target)
+			.filter(function(key) {
+				// Protects from prototype poisoning and unexpected merging up the prototype chain.
+				return key !== '__proto__' && key !== 'constructor' && key !== 'prototype'
+			})
+			.concat(getEnumerableOwnPropertySymbols(target))
 	}
 
 	function propertyIsOnObject(object, property) {
