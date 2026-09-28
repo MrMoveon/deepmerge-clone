@@ -1,5 +1,5 @@
 {
-  "name": "deepmerge-clone",
+  "name": "@afeisite/deepmerge-clone",
   "description": "A fork of deepmerge for deep (recursive) merging of JavaScript objects, with the prototype pollution vulnerability (CVE-2022-25883) fixed",
   "keywords": [
     "merge",
@@ -26,6 +26,9 @@
     "dist",
     "changelog.md"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=0.10.0"
   },
